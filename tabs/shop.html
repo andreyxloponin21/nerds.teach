@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
+<body class="catalog">
 <header class="main-header">
     <div class="container">
         <nav class="main-navigation">
@@ -50,24 +50,27 @@
             <form class="filter" method="get" action="#">
                 <section class="filter-option">
                     <fieldset>
-                        <h2>Стоимость:</h2>
+                        <legend>Стоимость:</legend>
+                        <div class="range-containier">
                         <div class="range">
                             <div class="line"></div>
                             <div class="line-left"></div>
                             <div class="range-left"><img src="/img/Ellipse 1.svg"</div>
                             <div class="range-right"><img src="/img/Ellipse 1.svg"</div>
-                            <div class="cost">
-                                <p class="cost-range">
-                                    <label for="min-cost">ОТ</label>
-                                    <input id="min-cost" type="text" name="min-cost" placeholder="0" value="0">
-                                </p>
+                        </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <p class="cost-range">
+                                <label for="min-cost">ОТ</label>
+                                <input id="min-cost" type="text" name="min-cost" placeholder="0" value="0">
+                            </p>
 
-                                <p class="cost-range">
-                                    <label for="max-cost">ДО</label>
-                                    <input id="max-cost" type="text" name="max-cost" placeholder="0" value="0">
-                                </p>
-                            </div>
-                            </div>
+                            <p class="cost-range">
+                                <label for="max-cost">ДО</label>
+                                <input id="max-cost" type="text" name="max-cost" placeholder="0" value="0">
+                            </p>
                         </div>
                     </fieldset>
 
@@ -75,16 +78,16 @@
                         <legend class="grid">Сетка:</legend>
                         <ul class="net">
                             <li class="net-option">
-                                <input class="visually-hidden2 filter-input filter-input-radio" type="radio" name="option" id="adaptive" checked disabled>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="adaptive" >
                                 <label for="adaptive">Адаптивная</label>
                         
                       
                             <li class="net-option">
-                                <input class="visually-hidden2 filter-input filter-input-radio" type="radio" name="option" id="fixed">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="fixed">
                                 <label for="fixed">Фиксированная</label>
                       
                             <li class="net-option">
-                                <input class="visually-hidden2 filter-input filter-input-radio" type="radio" name="option" id="ruber">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="ruber">
                                 <label for="ruber">Резиновая</label>
                         </ul>
                     </fieldset>
@@ -93,27 +96,27 @@
                         <legend class="grid">Особенности:</legend>
                         <ul class="feauter-list">
                             <li class="feauter-item">
-                                <input class="visually-hidden2 filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked disabled>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" >
                                 <label for="slider">Слайдер</label>
                             </li>
 
                             <li class="feauter-item">
-                                <input class="visually-hidden2 filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
-                                <label for="advantages">Блок преимуществ></label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
+                                <label for="advantages">Блок преимуществ</label>
                             </li>
 
                             <li class="feauter-item">
-                                <input class="visually-hidden2 filter-input filter-input-checkbox" type="checkbox" name="news" id="news">
-                                <label for="slider">Новости</label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news">
+                                <label for="news">Новости</label>
                             </li>
 
                             <li class="feauter-item">
-                                <input class="visually-hidden2 filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
-                                <label for="slider">Галерея</label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
+                                <label for="gallery">Галерея</label>
                             </li>
 
                             <li class="feauter-item">
-                                <input class="visually-hidden2 filter-input filter-input-checkbox" type="checkbox" name="basket" id="basker">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
                                 <label for="basket">Корзина</label>
                             </li>
                         </ul>
@@ -144,14 +147,7 @@
                         <a href="#">По названию</a>
                     </li>
                 </ul>
-
-            <p  class="sorting-buttons">
-                <button class="button-down" type="button"></button>
-            </p>
-
-            <p  class="sorting-buttons">
-                <button class="button-up" type="button"></button>
-            </p>
+        
             </section>
             <section class="our-parthners">
                 <ul class="our-parthners-list">
@@ -307,4 +303,5 @@
           <a href="#" class="modal-close">Закрыть</a>
       </form>
 </section>
+</body>
 </html>

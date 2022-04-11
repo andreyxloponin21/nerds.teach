@@ -118,7 +118,7 @@ text-transform: uppercase;
 .filter{
 	position: relative;
 	width: 260px;
-	margin-bottom: 26px;
+	margin-bottom: 27px;
 }
 
 .filter-input-radio:checked+label::after {
